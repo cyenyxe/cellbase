@@ -5,8 +5,8 @@ import com.mongodb.DB;
 import com.mongodb.DBObject;
 import com.mongodb.QueryBuilder;
 import org.opencb.cellbase.core.lib.api.ProteinFunctionPredictorDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.ArrayList;
 import java.util.Arrays;

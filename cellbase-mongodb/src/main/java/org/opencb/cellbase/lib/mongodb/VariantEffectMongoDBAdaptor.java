@@ -7,8 +7,8 @@ import org.opencb.cellbase.core.common.variation.GenomicVariant;
 import org.opencb.cellbase.core.common.variation.GenomicVariantEffect;
 import org.opencb.cellbase.core.common.variation.GenomicVariantEffectPredictor;
 import org.opencb.cellbase.core.lib.api.variation.VariantEffectDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -74,7 +74,7 @@ public class VariantEffectMongoDBAdaptor extends MongoDBAdaptor implements Varia
             dbTimeEnd = System.currentTimeMillis();
 
             QueryResult queryResult = new QueryResult();
-            queryResult.setDBTime((dbTimeEnd - dbTimeStart));
+            queryResult.setDbTime((dbTimeEnd - dbTimeStart));
             queryResult.setNumResults(list.size());
             queryResult.setResult(a);
 

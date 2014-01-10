@@ -1,7 +1,7 @@
 package org.opencb.cellbase.core.lib.api;
 
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.List;
 

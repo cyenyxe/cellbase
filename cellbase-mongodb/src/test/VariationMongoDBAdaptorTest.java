@@ -2,8 +2,8 @@ import org.junit.Test;
 import org.opencb.cellbase.core.common.Position;
 import org.opencb.cellbase.core.lib.DBAdaptorFactory;
 import org.opencb.cellbase.core.lib.api.variation.VariationDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 import org.opencb.cellbase.lib.mongodb.MongoDBAdaptorFactory;
 
 import java.io.IOException;

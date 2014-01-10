@@ -5,8 +5,8 @@ import org.opencb.cellbase.core.common.IntervalFeatureFrequency;
 import org.opencb.cellbase.core.common.Position;
 import org.opencb.cellbase.core.common.Region;
 import org.opencb.cellbase.core.lib.api.regulatory.TfbsDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -115,7 +115,7 @@ public class TfbsMongoDBAdaptor extends RegulatoryRegionMongoDBAdaptor implement
         for (int i = 0; i < targetGeneIdList.size(); i++) {
             String targetGeneId = targetGeneIdList.get(0);
             QueryResult queryResult = queryResults.get(0);
-            BasicDBList list = (BasicDBList) queryResult.get("result");
+            BasicDBList list = (BasicDBList) queryResult.getResult();
 
             for (int j = 0; j < list.size(); j++) {
                 BasicDBObject gene = (BasicDBObject) list.get(j);

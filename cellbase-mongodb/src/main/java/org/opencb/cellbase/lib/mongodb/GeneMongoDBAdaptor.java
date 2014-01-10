@@ -5,8 +5,8 @@ import org.opencb.cellbase.core.common.Position;
 import org.opencb.cellbase.core.common.Region;
 import org.opencb.cellbase.core.common.core.Gene;
 import org.opencb.cellbase.core.lib.api.GeneDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.*;
 
@@ -104,7 +104,7 @@ public class GeneMongoDBAdaptor extends MongoDBAdaptor implements GeneDBAdaptor 
         queryResult.setId("result");
         DBObject result = new BasicDBObject("biotypes", biotypes);
         queryResult.setResult(Arrays.asList(result));
-        queryResult.setDBTime(0);
+        queryResult.setDbTime(0);
         return queryResult;
     }
 

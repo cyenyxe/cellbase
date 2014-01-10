@@ -3,8 +3,8 @@ package org.opencb.cellbase.lib.mongodb;
 import com.mongodb.DB;
 import org.opencb.cellbase.core.common.Region;
 import org.opencb.cellbase.core.lib.api.ConservedRegionDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.List;
 

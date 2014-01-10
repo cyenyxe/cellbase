@@ -2,7 +2,7 @@ package org.opencb.cellbase.server.ws.genomic;
 
 import com.google.common.base.Splitter;
 import org.opencb.cellbase.core.lib.api.ChromosomeDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
+import org.opencb.commons.containers.map.QueryOptions;
 import org.opencb.cellbase.server.ws.GenericRestWSServer;
 import org.opencb.cellbase.server.exception.VersionException;
 

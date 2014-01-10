@@ -5,8 +5,8 @@ import com.mongodb.*;
 import org.opencb.cellbase.core.common.IntervalFeatureFrequency;
 import org.opencb.cellbase.core.common.Region;
 import org.opencb.cellbase.core.lib.DBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.math.BigInteger;
 import java.util.*;
@@ -203,7 +203,7 @@ public class MongoDBAdaptor extends DBAdaptor {
         List<String> diseases = mongoDBCollection.distinct(key);
         long dbTimeEnd = System.currentTimeMillis();
         queryResult.setId(id.toString());
-        queryResult.setDBTime(dbTimeEnd - dbTimeStart);
+        queryResult.setDbTime(dbTimeEnd - dbTimeStart);
         queryResult.setResult(diseases);
 
         return queryResult;
@@ -243,7 +243,7 @@ public class MongoDBAdaptor extends DBAdaptor {
 
             // setting queryResult fields
             queryResult.setId(ids.get(i).toString());
-            queryResult.setDBTime((dbTimeEnd - dbTimeStart));
+            queryResult.setDbTime((dbTimeEnd - dbTimeStart));
             queryResult.setNumResults(list.size());
             queryResult.setResult(list);
 
@@ -321,7 +321,7 @@ public class MongoDBAdaptor extends DBAdaptor {
 
             }
             queryResult.setId(ids.get(i).toString());
-            queryResult.setDBTime((dbTimeEnd - dbTimeStart));
+            queryResult.setDbTime((dbTimeEnd - dbTimeStart));
             queryResult.setResult(list);
 
             queryResults.add(queryResult);

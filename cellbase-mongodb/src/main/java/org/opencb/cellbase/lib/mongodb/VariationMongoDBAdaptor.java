@@ -4,8 +4,8 @@ import com.mongodb.*;
 import org.opencb.cellbase.core.common.Position;
 import org.opencb.cellbase.core.common.Region;
 import org.opencb.cellbase.core.lib.api.variation.VariationDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.*;
 
@@ -45,7 +45,7 @@ public class VariationMongoDBAdaptor extends MongoDBAdaptor implements Variation
         queryResult.setId("result");
         DBObject result = new BasicDBObject("consequenceTypes", consquenceTypes);
         queryResult.setResult(Arrays.asList(result));
-        queryResult.setDBTime(0);
+        queryResult.setDbTime(0);
         return queryResult;
     }
 

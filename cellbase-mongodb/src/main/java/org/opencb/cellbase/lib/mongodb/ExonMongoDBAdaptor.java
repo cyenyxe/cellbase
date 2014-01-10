@@ -10,8 +10,8 @@ import org.opencb.cellbase.core.common.core.Exon;
 import org.opencb.cellbase.core.common.core.Gene;
 import org.opencb.cellbase.core.common.core.Transcript;
 import org.opencb.cellbase.core.lib.api.ExonDBAdaptor;
-import org.opencb.cellbase.core.lib.dbquery.QueryOptions;
-import org.opencb.cellbase.core.lib.dbquery.QueryResult;
+import org.opencb.commons.containers.map.QueryOptions;
+import org.opencb.commons.containers.QueryResult;
 
 import java.util.ArrayList;
 import java.util.List;
